@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">androidcodingtest</string>
+    <string name="amount_txt">AMOUNT</string>
+    <string name="currencies_txt">CURRENCIES</string>
+</resources>
