@@ -14,3 +14,7 @@ https://coinmarketcap.com/api/documentation/v1/#operation/getV1ToolsPriceconvers
 - [x] The app must show the loading indicator for a crypto currency when fetching the
 conversion rate from the API
 
+## DEMO
+
+https://user-images.githubusercontent.com/20203694/148622398-ce40c661-f03f-45f4-9fe2-dbc5e3676678.mp4
+
