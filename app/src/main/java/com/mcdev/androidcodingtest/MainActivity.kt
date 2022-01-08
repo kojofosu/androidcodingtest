@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity() {
                 when (it) {
                     is MainViewModel.CurrencyEvent.Success -> {
                         //what to do when success
-                        binding.progressBar.visibility = View.GONE
+                        binding.progressBar.visibility = View.INVISIBLE
                         Log.d("TAG", "onCreate: Success ${it.data}")
                         currencyAdapter.submitList(listOf(it.data))
 
@@ -106,7 +106,7 @@ class MainActivity : AppCompatActivity() {
                     }
                     is MainViewModel.CurrencyEvent.Failure -> {
                         //do when failure
-                        binding.progressBar.visibility = View.GONE
+                        binding.progressBar.visibility = View.INVISIBLE
                         Log.d("TAG", "onCreate: Failure ${it.errorText}")
 
                     }
