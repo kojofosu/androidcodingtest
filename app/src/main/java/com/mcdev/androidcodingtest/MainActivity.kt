@@ -100,7 +100,6 @@ class MainActivity : AppCompatActivity() {
                         //what to do when success
                         binding.progressBar.visibility = View.GONE
                         Log.d("TAG", "onCreate: Success ${it.data}")
-                        Toast.makeText(this@MainActivity, "Success", Toast.LENGTH_SHORT).show()
                         currencyAdapter.submitList(listOf(it.data))
 
                         Log.d("TAG", "onCreate: list of data: " + currencyAdapter.currentList())
@@ -108,7 +107,6 @@ class MainActivity : AppCompatActivity() {
                     is MainViewModel.CurrencyEvent.Failure -> {
                         //do when failure
                         binding.progressBar.visibility = View.GONE
-                        Toast.makeText(this@MainActivity, "Failure", Toast.LENGTH_SHORT).show()
                         Log.d("TAG", "onCreate: Failure ${it.errorText}")
 
                     }
